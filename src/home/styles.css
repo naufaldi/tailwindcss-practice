@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .red {
+    color: red;
+  }
+  @keyframes spin-fast {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .animate-spin-fast {
+    animation: spin-fast 1s linear infinite;
+  }
+  .animate-wiggle {
+    animation: wiggle 1s linear infinite;
+  }
+}
